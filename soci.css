@@ -1,0 +1,89 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Dark Gray for Text */
+    background-color: #f4f4f4; /* Light Gray Background */
+}
+
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 15px;
+    background-color: #2E4053; /* Navy Blue for Navigation Bar */
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF; /* White for Links */
+    padding: 5px 10px;
+}
+
+.hello {
+    text-align: center;
+    padding: 20px;
+    color: #1A5276; /* Darker Blue for Heading */
+}
+
+.contact-form {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    padding: 20px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input, textarea, button {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #333333; /* Dark Gray for Input Text */
+}
+
+button {
+    background-color: #2E4053; /* Navy Blue for Buttons */
+    color: #FFFFFF; /* White for Button Text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-media-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-media-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    color: #424949; /* Darker Gray for Social Media Links */
+}
+
+.social-icon {
+    margin: 5px;
+    width: 100px; /* Adjusted width */
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .social-media-images, .social-media-links {
+        grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    }
+
+    textarea {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 0 auto; /* Center align */
+    }
+}
